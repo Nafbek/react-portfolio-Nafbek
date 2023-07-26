@@ -1,18 +1,25 @@
 import React, { useState } from "react";
-import {
-  AboutMe,
-  Contact,
-  Portfolio,
-  Footer,
-  Resume,
-} from "../components/pages";
+// import {
+//   AboutMe,
+//   Contact,
+//   Portfolio,
+//   Footer,
+//   Resume,
+// } from "../components/pages";
+import AboutMe from "../components/pages/AboutMe";
+import Contact from "../components/pages/Contact";
+import Portfolio from "../components/pages/Portfolio";
+import Footer from "../components/pages/Footer";
+import { Resume } from "../components/pages/Resume";
+
 import Navigation from "./Navigation";
 // import tailwind
 
 export default function MainContainer() {
   const [currentPage, setCurrentPage] = useState("AboutMe");
 
-  const [name, setName] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
 
   const [message, setMessage] = useState("");
@@ -40,7 +47,7 @@ export default function MainContainer() {
     if (email !== reg) {
       return <p>Please re-enter your email</p>;
     }
-    if (!name) {
+    if (!firstName && !lastName) {
       return <p>Name is required!</p>;
     }
     if (!message) {
@@ -50,8 +57,10 @@ export default function MainContainer() {
   const handleInputChange = (e) => {
     e.preventDefault();
     const { name, value } = e.target;
-    if (name === "name") {
-      setName(value);
+    if (name === "firstName") {
+      setFirstName(value);
+    } else if (name === "lastName") {
+      setLastName(value);
     } else if (name === "email") {
       setEmail(value);
     } else if (name === "message") {
@@ -59,20 +68,15 @@ export default function MainContainer() {
     }
   };
 
-  const handleFormSubmit = () => {
+  const handleFormSubmit = (e) => {
     e.preventDefault();
 
-
-    if()
-    setName("");
+    // if()
+    setFirstName("");
+    setLastName("");
     setEmail("");
     setMessage("");
-
-
-
-       
-        // <p>You successfully submitted your message!</p>
-    
+    return <p>You successfully submitted your message!</p>;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);

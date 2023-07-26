@@ -3,7 +3,7 @@ import React from "react";
 export default function AboutMe() {
   return (
     <>
-      <div>
+      <div id="aboutMe">
         <h2>About Me</h2>
         <p>
           With a strong business and project management foundation, combined

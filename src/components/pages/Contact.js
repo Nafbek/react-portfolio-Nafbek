@@ -3,7 +3,7 @@ import React from "react";
 export default function Contact(props) {
   retutn(
     <>
-      <div>
+      <div id="contact">
         <form>
           {/* All inputs are required */}
           <div>
@@ -12,9 +12,9 @@ export default function Contact(props) {
               <input
                 className=""
                 type="text"
-                name="contact"
+                name="firstName"
                 value={props.firstName}
-                onChange={}
+                onChange={() => handleInputChange}
                 placeholder="firstName name"
               />
             </div>
@@ -23,9 +23,9 @@ export default function Contact(props) {
               <input
                 className=""
                 type="text"
-                name="contact"
+                name="lastName"
                 value={props.lastName}
-                onChange={}
+                onChange={() => handleInputChange}
                 placeholder="lastName"
               />
             </div>
@@ -37,14 +37,20 @@ export default function Contact(props) {
               type="text"
               name="email"
               value={props.email}
-              onChange={}
+              onChange={() => handleInputChange}
               placeholder="email"
             />
           </div>
           <div>
             <label>Message: </label>
-            <textarea />
-            <button className="">Submit</button>
+            <textarea
+              name="message"
+              value={props.message}
+              onClick={() => handleFormSubmit}
+            />
+            <button type="button" className="">
+              Submit
+            </button>
           </div>
         </form>
       </div>

@@ -3,15 +3,18 @@ import React from "react";
 export default function Projects() {
   return (
     <>
-      <div className="portfolio-container">
+      <div id="portfolio" className="portfolio-container">
         <div id="project1-bgrd" className="">
           <a href="">
             <h3>project name 1</h3>
-            <span></span>
           </a>
-          <a href="">
+          <span role="img" aria-label="octopus">
+            <a href="https://github.com/nafbek............"> 🐙 </a>
+          </span>
+
+          {/* <a href="">
             <img src="../../public/images/github-mark-white" />
-          </a>
+          </a> */}
           <p>fullstack....</p>
         </div>
 

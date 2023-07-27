@@ -1,8 +1,9 @@
 import React from "react";
 
 export default function Contact(props) {
-  retutn(
+  return (
     <>
+      <h2>Contact</h2>
       <div id="contact">
         <form>
           {/* All inputs are required */}
@@ -11,10 +12,11 @@ export default function Contact(props) {
               <label>First Name:</label>
               <input
                 className=""
+                required
                 type="text"
                 name="firstName"
                 value={props.firstName}
-                onChange={() => handleInputChange}
+                onChange={props.handleInputChange}
                 placeholder="firstName name"
               />
             </div>
@@ -22,10 +24,11 @@ export default function Contact(props) {
               <label>Last Name:</label>
               <input
                 className=""
+                required
                 type="text"
                 name="lastName"
                 value={props.lastName}
-                onChange={() => handleInputChange}
+                onChange={props.handleInputChange}
                 placeholder="lastName"
               />
             </div>
@@ -34,25 +37,32 @@ export default function Contact(props) {
             <label>Email Address: </label>
             <input
               className=""
+              required
               type="text"
               name="email"
               value={props.email}
-              onChange={() => handleInputChange}
+              onChange={props.handleInputChange}
               placeholder="email"
             />
           </div>
           <div>
             <label>Message: </label>
             <textarea
+              required
               name="message"
               value={props.message}
-              onClick={() => handleFormSubmit}
+              onChange={props.handleInputChange}
             />
-            <button type="button" className="">
-              Submit
-            </button>
           </div>
+          {props.validateInput}
         </form>
+        <div>
+          <button type="button" onClick={props.handleFormSubmit} className="">
+            Submit
+          </button>
+        </div>
+        {props.errorMessage && <p>{props.errorMessage}</p>}
+        {props.successMessage && <p>{props.successMessage}</p>}
       </div>
     </>
   );

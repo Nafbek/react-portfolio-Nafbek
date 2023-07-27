@@ -1,16 +1,10 @@
 import React, { useState } from "react";
-// import {
-//   AboutMe,
-//   Contact,
-//   Portfolio,
-//   Footer,
-//   Resume,
-// } from "../components/pages";
+
 import AboutMe from "../components/pages/AboutMe";
 import Contact from "../components/pages/Contact";
 import Portfolio from "../components/pages/Portfolio";
 import Footer from "../components/pages/Footer";
-import { Resume } from "../components/pages/Resume";
+import Resume from "../components/pages/Resume";
 
 import Navigation from "./Navigation";
 // import tailwind
@@ -24,38 +18,52 @@ export default function MainContainer() {
 
   const [message, setMessage] = useState("");
 
-  if (currentPage === "AboutMe") {
-    return (<AboutMe />), (<Footer />);
-  } else if (currentPage === "Contact") {
-    return (<Contact />), (<Footer />);
-  } else if (currentPage === "Portfolio") {
-    return (<Portfolio />), (<Footer />);
-  } else if (currentPage === "Resume") {
-    return (
-      <>
-        <Resume />
-        <Footer />
-      </>
-    );
-  }
-  function validInput() {
-    const reg = `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`.test();
+  const [errorMessage, setErrorMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
 
-    if (!email) {
-      return <p>Email is required</p>;
+  const pageRender = () => {
+    if (currentPage === "AboutMe") {
+      return <AboutMe />;
+    } else if (currentPage === "Contact") {
+      return (
+        <Contact
+          firstName={firstName}
+          lastName={lastName}
+          email={email}
+          message={message}
+          handleInputChange={handleInputChange}
+          handleFormSubmit={handleFormSubmit}
+          errorMessage={errorMessage}
+          successMessage={successMessage}
+          validateInput={validateInput}
+        />
+      );
+    } else if (currentPage === "Portfolio") {
+      return <Portfolio />;
+    } else if (currentPage === "Resume") {
+      return <Resume />;
     }
-    if (email !== reg) {
-      return <p>Please re-enter your email</p>;
-    }
+  };
+
+  function validateInput() {
+    const reg = /^([a-z0-9_.-]+)@([da-z.-]+).([a-z.]{2,6})$/;
+
     if (!firstName && !lastName) {
-      return <p>Name is required!</p>;
+      return "Name is required!";
+    }
+    if (!email) {
+      return "Email is required";
+    }
+    if (!reg.test(email)) {
+      return "Invalid email, please re-enter";
     }
     if (!message) {
-      return <p>Message is required!</p>;
+      return "Message is required!";
     }
   }
   const handleInputChange = (e) => {
     e.preventDefault();
+
     const { name, value } = e.target;
     if (name === "firstName") {
       setFirstName(value);
@@ -71,12 +79,18 @@ export default function MainContainer() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    // if()
-    setFirstName("");
-    setLastName("");
-    setEmail("");
-    setMessage("");
-    return <p>You successfully submitted your message!</p>;
+    const validationMessage = validateInput();
+    if (validationMessage) {
+      setErrorMessage(validationMessage);
+      setSuccessMessage("");
+    } else {
+      setFirstName("");
+      setLastName("");
+      setEmail("");
+      setMessage("");
+      setErrorMessage("");
+      setSuccessMessage("You successfully submitted your message!");
+    }
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
@@ -85,11 +99,11 @@ export default function MainContainer() {
     <>
       <div className="main-container">
         <Navigation
-          handleFormSubmit={handleFormSubmit}
-          handleInputChange={handleInputChange}
           handlePageChange={handlePageChange}
-          validInput={validInput}
+          validateInput={validateInput}
         />
+        {pageRender()}
+        <Footer />
       </div>
     </>
   );

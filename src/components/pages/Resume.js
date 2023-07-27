@@ -2,11 +2,11 @@ import React from "react";
 
 export default function Resume() {
   return (
-    <>
-      <div>
+    <div>
+      <div className="container border ms-5">
         <h2>Resume</h2>
         <p>
-          Download
+          Download {""}
           <a
             href="https://docs.google.com/document/d/16LnhgQ-QQ2N2bM9kBwz4Sw38bwdA6OJng9C_HgQOkhM/edit"
             alt="resume document"
@@ -34,6 +34,6 @@ export default function Resume() {
           <li>Express.js</li>
         </ul>
       </div>
-    </>
+    </div>
   );
 }

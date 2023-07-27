@@ -3,8 +3,8 @@ import React from "react";
 export default function Resume() {
   return (
     <div>
-      <div className="container border ms-5">
-        <h2>Resume</h2>
+      <div className="container">
+        <h2 className="py-3">Resume</h2>
         <p>
           Download {""}
           <a

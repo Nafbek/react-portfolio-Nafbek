@@ -7,7 +7,6 @@ import Footer from "../components/pages/Footer";
 import Resume from "../components/pages/Resume";
 
 import Navigation from "./Navigation";
-// import tailwind
 
 export default function MainContainer() {
   const [currentPage, setCurrentPage] = useState("AboutMe");
@@ -100,10 +99,14 @@ export default function MainContainer() {
       <div className="main-container">
         <Navigation
           handlePageChange={handlePageChange}
+          currentPage={currentPage}
           validateInput={validateInput}
         />
-        {pageRender()}
-        <Footer />
+
+        <div className="content-section">{pageRender()}</div>
+        <div className="footer-section">
+          <Footer />
+        </div>
       </div>
     </>
   );

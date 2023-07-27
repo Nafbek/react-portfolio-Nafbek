@@ -1,35 +1,55 @@
-import React from "react";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import "../App.css";
 
-export default function Navigation({ handlePageChange }) {
+export default function Navigation({ handlePageChange, currentPage }) {
   return (
-    <div className=" ">
-      <div className="">
+    <div className="headerContainer">
+      <div className="headerName">
         <h1>Nafbek</h1>
       </div>
-      <div>
-        <nav className="">
-          <ul className="">
-            <li className="">
-              <a href="#aboutMe" onClick={() => handlePageChange("AboutMe")}>
+      <div className="navDiv">
+        <nav>
+          <ul className="nav">
+            <li className="nav-item">
+              <a
+                href="#aboutMe"
+                className={`nav-link ${
+                  currentPage === "AboutMe" ? "active" : ""
+                }`}
+                onClick={() => handlePageChange("AboutMe")}
+              >
                 About Me
               </a>
             </li>
-            <li className="">
+            <li className="nav-item">
               <a
                 href="#portfolio"
+                className={`nav-link ${
+                  currentPage === "Portfolio" ? "active" : ""
+                }`}
                 onClick={() => handlePageChange("Portfolio")}
               >
                 Portfolio
               </a>
             </li>
-            <li className="">
-              <a href="#contact" onClick={() => handlePageChange("Contact")}>
+            <li className="nav-item">
+              <a
+                href="#contact"
+                className={`nav-link ${
+                  currentPage === "Contact" ? "active" : ""
+                }`}
+                onClick={() => handlePageChange("Contact")}
+              >
                 Contact
               </a>
             </li>
-            <li className="">
-              <a href="#resume" onClick={() => handlePageChange("Resume")}>
+            <li className="nav-item">
+              <a
+                href="#resume"
+                className={`nav-link ${
+                  currentPage === "Resume" ? "active" : ""
+                }`}
+                onClick={() => handlePageChange("Resume")}
+              >
                 Resume
               </a>
             </li>
@@ -39,55 +59,3 @@ export default function Navigation({ handlePageChange }) {
     </div>
   );
 }
-
-// export default function Navigation({ handlePageChange }) {
-//   return (
-//     <nav className="navbar navbar-expand-lg bg-body-tertiary">
-//       <div className="$green-800">
-//         <h1 className="navbar-brand">Nafbek</h1>
-//       </div>
-//       <div className="container-fluid">
-//         <div className="collapse divbar-collapse">
-//           <ul className="navbar-nav">
-//             <li className="nav-item">
-//               <a
-//                 className="nav-link"
-//                 href="#aboutMe"
-//                 onClick={() => handlePageChange("AboutMe")}
-//               >
-//                 About Me
-//               </a>
-//             </li>
-//             <li className="nav-item">
-//               <a
-//                 className="nav-link"
-//                 href="#portfolio"
-//                 onClick={() => handlePageChange("Portfolio")}
-//               >
-//                 Portfolio
-//               </a>
-//             </li>
-//             <li className="nav-item">
-//               <a
-//                 className="nav-link"
-//                 href="#contact"
-//                 onClick={() => handlePageChange("Contact")}
-//               >
-//                 Contact
-//               </a>
-//             </li>
-//             <li className="nav-item">
-//               <a
-//                 className="nav-link"
-//                 href="#resume"
-//                 onClick={() => handlePageChange("Resume")}
-//               >
-//                 Resume
-//               </a>
-//             </li>
-//           </ul>
-//         </div>
-//       </div>
-//     </nav>
-//   );
-// }

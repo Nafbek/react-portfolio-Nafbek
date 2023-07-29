@@ -1,10 +1,10 @@
 .main-container {
     height: 100%;
+    background-color: rgb(78, 208, 189);
 }
 
 .content-section {
     min-height: 78vh;
-    background-color: rgb(78, 208, 189);
     padding-top: 4rem;
 }
 .headerContainer {
@@ -26,7 +26,7 @@
       line-height: 1.5rem;
     }
   .navDiv a   {
-    color: rgb(43, 220, 226);
+    color: rgb(16, 228, 235);
     font-weight: bold;
    
   }
@@ -34,5 +34,36 @@ a:hover{
 background-color: beige;
 }
 a.active {
-    color: rgb(12, 239, 39);
+  color: rgb(43, 6, 176);
+    background-color: rgb(223, 243, 228);
+}
+.projects-container {
+max-width: 75%;
+ 
+  margin: 0 0 2rem 8rem;
+ 
+}
+.project-box-height {
+  height: 12rem;
+ 
+}
+
+@media screen and (max-width: 756px) {
+  .projects-container {
+    
+      margin-left: 2rem;
+    }
+  
+}
+
+.name-emoji-link {
+  opacity: 0;
+text-decoration: none;
+padding-right: 1rem;
+}
+
+.name-emoji-link:hover {
+opacity: 1;
+  text-decoration: none;
+ color: antiquewhite;
 }

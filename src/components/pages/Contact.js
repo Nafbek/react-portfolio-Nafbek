@@ -4,7 +4,7 @@ export default function Contact(props) {
   return (
     <>
       <div className="container">
-        <h2 className="heaind2 py-3">Contact</h2>
+        <h2 className="heading2 py-3">Contact</h2>
         <div id="contact">
           <form className="my-2">
             <div className="py-3 my-3">

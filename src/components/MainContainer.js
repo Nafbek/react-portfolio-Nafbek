@@ -103,11 +103,14 @@ export default function MainContainer() {
           validateInput={validateInput}
         />
 
-        <div className="content-section">{pageRender()}</div>
-        <div className="footer-section">
-          <Footer />
+        <div className="content-section">{pageRender()}
+        
         </div>
+        <Footer />
       </div>
+    
+          
+  
     </>
   );
 }

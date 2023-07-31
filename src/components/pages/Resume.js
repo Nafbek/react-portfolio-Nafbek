@@ -6,12 +6,12 @@ export default function Resume() {
       <div className="container">
         <h2 className="py-3">Resume</h2>
         <p>
-          Download {""}
+          Download my {""}
           <a
             href="https://docs.google.com/document/d/16LnhgQ-QQ2N2bM9kBwz4Sw38bwdA6OJng9C_HgQOkhM/edit"
             alt="resume document"
           >
-            my resume
+            resume
           </a>
         </p>
         <h3>Frontend</h3>

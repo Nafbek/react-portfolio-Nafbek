@@ -1,69 +1,112 @@
 .main-container {
-    height: 100%;
-    background-color: rgb(78, 208, 189);
+  height: 100%;
+  background-color: rgb(78, 208, 189);
 }
-
+/* Navigation component */
 .content-section {
-    min-height: 78vh;
-    padding-top: 4rem;
+  min-height: 78vh;
+  padding-top: 4rem;
 }
 .headerContainer {
-    background-color: rgb(13, 40, 36);
-    color: antiquewhite;
-    display: flex;
-    padding: 2rem;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    }
+  background-color: rgb(13, 40, 36);
+  color: antiquewhite;
+  display: flex;
+  padding: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-    .headerName {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    p {
-       font-family: 'Times New Roman', Times, serif;
-       font-size: large;
-      line-height: 1.5rem;
-    }
-  .navDiv a   {
-    color: rgb(16, 228, 235);
-    font-weight: bold;
-   
-  }
-a:hover{
-background-color: beige;
+.headerName {
+  display: flex;
+  flex-wrap: wrap;
+}
+p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+  line-height: 1.5rem;
+}
+.navDiv a {
+  color: rgb(16, 228, 235);
+  font-weight: bold;
+}
+a:hover {
+  background-color: rgb(78, 208, 189);
 }
 a.active {
   color: rgb(43, 6, 176);
-    background-color: rgb(223, 243, 228);
+  background-color: rgb(223, 243, 228);
 }
+
+/* Portfolio component */
 .projects-container {
-max-width: 75%;
- 
+  max-width: 75%;
+
   margin: 0 0 2rem 8rem;
- 
 }
 .project-box-height {
   height: 12rem;
- 
 }
 
 @media screen and (max-width: 756px) {
   .projects-container {
-    
-      margin-left: 2rem;
-    }
-  
+    margin-left: 2rem;
+  }
 }
-
+.project-link-container {
+  text-decoration: none;
+}
 .name-emoji-link {
   opacity: 0;
-text-decoration: none;
-padding-right: 1rem;
+  padding-right: 1rem;
+  display: inline-block;
+  padding: 0 1rem;
+  margin-right: 1rem;
+  background-color: rgb(17, 58, 23);
+  border-radius: 8%;
 }
 
 .name-emoji-link:hover {
-opacity: 1;
   text-decoration: none;
- color: antiquewhite;
+}
+
+.project-box {
+  position: relative;
+}
+.project-box .links-paragraph {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.project-box:hover .links-paragraph,
+.project-box:hover .name-emoji-link {
+  visibility: visible;
+  opacity: 1;
+  text-decoration: none;
+  color: rgb(215, 239, 137);
+  font-weight: bold;
+  font-size: large;
+}
+
+/* Contact component */
+.contact-submit-btn {
+  border: none;
+  background-color: rgb(14, 33, 3);
+  color: bisque;
+  padding: 0.5rem 1rem;
+  font-size: large;
+}
+.contact-submit-btn:hover {
+  color: black;
+  background-color: rgb(4, 239, 164);
+}
+
+.contact-container {
+  width: 30%;
+}
+@media screen and (max-width: 756px) {
+  .contact-container {
+    width: auto;
+  }
 }

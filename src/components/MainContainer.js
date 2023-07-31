@@ -5,7 +5,6 @@ import Contact from "../components/pages/Contact";
 import Portfolio from "../components/pages/Portfolio";
 import Footer from "../components/pages/Footer";
 import Resume from "../components/pages/Resume";
-
 import Navigation from "./Navigation";
 
 export default function MainContainer() {
@@ -47,17 +46,18 @@ export default function MainContainer() {
   function validateInput() {
     const reg = /^([a-z0-9_.-]+)@([da-z.-]+).([a-z.]{2,6})$/;
 
-    if (!firstName && !lastName) {
-      return "Name is required!";
-    }
-    if (!email) {
+    if (!firstName) {
+      return "First name is required!";
+    } else if (!lastName) {
+      return "Last name is required";
+    } else if (!email) {
       return "Email is required";
-    }
-    if (!reg.test(email)) {
+    } else if (!reg.test(email)) {
       return "Invalid email, please re-enter";
-    }
-    if (!message) {
+    } else if (!message) {
       return "Message is required!";
+    } else {
+      return "";
     }
   }
   const handleInputChange = (e) => {
@@ -79,6 +79,7 @@ export default function MainContainer() {
     e.preventDefault();
 
     const validationMessage = validateInput();
+
     if (validationMessage) {
       setErrorMessage(validationMessage);
       setSuccessMessage("");
@@ -103,14 +104,9 @@ export default function MainContainer() {
           validateInput={validateInput}
         />
 
-        <div className="content-section">{pageRender()}
-        
-        </div>
+        <div className="content-section">{pageRender()}</div>
         <Footer />
       </div>
-    
-          
-  
     </>
   );
 }

@@ -32,9 +32,13 @@ const style = {
     backgroundRepeat: "no-repeat",
   },
   description: {
-    marginTop: "3rem",
+    marginTop: "6rem",
     fontWeight: "bold",
-    color: "green",
+    color: "rgb(17, 58, 23)",
+    backgroundColor: "rgb(144, 184, 15)",
+  },
+  iconsize: {
+    width: "1rem",
   },
 };
 
@@ -46,99 +50,164 @@ export default function Projects() {
         <div className="projects-container">
           <div className="row row-cols-1 row-cols-md-2 row-cols-lg-2">
             <div className="col-md mb-3">
-              <a></a>
-
-              <div className="p-3 project-box-height" style={style.project1}>
-                <div className="project-link-container">
-                  <a href="https://jennastrom.github.io/Beer-and-a-show/">
-                    <h3 className="name-emoji-link">Beer and A Show</h3>
+              <a className="project-link-container" href="#">
+                <div
+                  className="p-3 project-box project-box-height"
+                  style={style.project1}
+                >
+                  <a
+                    className="name-emoji-link"
+                    href="https://jennastrom.github.io/Beer-and-a-show/"
+                  >
+                    Beer and A Show
                   </a>
                   <a
                     className="name-emoji-link"
                     href="https://github.com/JennaStrom/Beer-and-a-show"
                   >
-                    🐙
+                    <img
+                      src="images/github-mark-white.png"
+                      style={style.iconsize}
+                    />
                   </a>
+                  <p className="links-paragraph" style={style.description}>
+                    Frontend
+                  </p>
                 </div>
-
-                <p style={style.description}>Frontend</p>
-              </div>
+              </a>
             </div>
 
             <div className="col-md mb-3">
-              <div className="p-3 project-box-height" style={style.project2}>
-                <a href="https://hidden-lake-38607-a47be9049bc1.herokuapp.com/">
-                  <h3 className="name-emoji-link">Nutrition Ninja</h3>
-                  <span></span>
-                </a>
-                <a
-                  className="name-emoji-link"
-                  href="https://github.com/JennaStrom/nutrition-ninja"
+              <a className="project-link-container" href="#">
+                <div
+                  className="p-3 project-box project-box-height"
+                  style={style.project2}
                 >
-                  🐙
-                </a>
-                <p style={style.description}>Full Stack</p>
-              </div>
+                  <a
+                    className="name-emoji-link"
+                    href="https://hidden-lake-38607-a47be9049bc1.herokuapp.com/"
+                  >
+                    Nutrition Ninja
+                  </a>
+                  <a
+                    className="name-emoji-link"
+                    href="https://github.com/JennaStrom/nutrition-ninja"
+                  >
+                    <img
+                      src="images/github-mark-white.png"
+                      style={style.iconsize}
+                    />
+                  </a>
+                  <p className="links-paragraph" style={style.description}>
+                    Full Stack
+                  </p>
+                </div>
+              </a>
             </div>
 
             <div className="col-md mb-3">
-              <div className="p-3 project-box-height " style={style.project3}>
-                <a href="https://nafbek.github.io/weather-dashboard-5days-forecast/">
-                  <h3 className="name-emoji-link">Weather Dashboard</h3>
-                  <span></span>
-                </a>
-                <a
-                  className="name-emoji-link"
-                  href="https://github.com/Nafbek/weather-dashboard-5days-forecast"
+              <a className="project-link-container" href="#">
+                <div
+                  className="p-3 project-box project-box-height"
+                  style={style.project3}
                 >
-                  🐙
-                </a>
-                <p style={style.description}>Frontend</p>
-              </div>
+                  <a
+                    className="name-emoji-link"
+                    href="https://nafbek.github.io/weather-dashboard-5days-forecast/"
+                  >
+                    Weather Dashboard
+                  </a>
+                  <a
+                    className="name-emoji-link"
+                    href="https://github.com/Nafbek/weather-dashboard-5days-forecast"
+                  >
+                    <img
+                      src="images/github-mark-white.png"
+                      style={style.iconsize}
+                    />
+                  </a>
+                  <p className="links-paragraph" style={style.description}>
+                    Frontend
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div className="col-md mb-3">
+              <a className="project-link-container" href="#">
+                <div
+                  className="p-3 project-box project-box-height"
+                  style={style.project4}
+                >
+                  <a
+                    className="name-emoji-link"
+                    href="https://nafbek.github.io/password-generator-challenge3/"
+                  >
+                    Password Generator
+                  </a>
+                  <a
+                    className="name-emoji-link"
+                    href="https://github.com/Nafbek/password-generator-challenge3/settings/pages"
+                  >
+                    <img
+                      src="images/github-mark-white.png"
+                      style={style.iconsize}
+                    />
+                  </a>
+                  <p className="links-paragraph" style={style.description}>
+                    Frontend
+                  </p>
+                </div>
+              </a>
             </div>
             <div className="col-md mb-3">
-              <div className="p-3 project-box-height" style={style.project4}>
-                <a href="https://nafbek.github.io/password-generator-challenge3/">
-                  <h3 className="name-emoji-link">Password Generator</h3>
-                </a>
-                <a
-                  className="name-emoji-link"
-                  href="https://github.com/Nafbek/password-generator-challenge3/settings/pages"
+              <a className="project-link-container" href="#">
+                <div
+                  className="p-3 project-box project-box-height"
+                  style={style.project5}
                 >
-                  🐙
-                </a>
-                <p style={style.description}>Frontend</p>
-              </div>
+                  <a
+                    className="name-emoji-link"
+                    href="https://nafbek.github.io/work-day-scheduler/"
+                  >
+                    Work Day Scheduler
+                  </a>
+                  <a
+                    className="name-emoji-link"
+                    href="https://github.com/Nafbek/work-day-scheduler"
+                  >
+                    <img
+                      src="images/github-mark-white.png"
+                      style={style.iconsize}
+                    />
+                  </a>
+                  <p className="links-paragraph" style={style.description}>
+                    Frontend
+                  </p>
+                </div>
+              </a>
             </div>
+
             <div className="col-md mb-3">
-              <div className="p-3 project-box-height" style={style.project5}>
-                <a href="Nutrition Ninja (hidden-lake-38607-a47be9049bc1.herokuapp.com)">
-                  <h3 className="name-emoji-link">555555555555</h3>
-                  <span></span>
-                </a>
-                <a
-                  className="name-emoji-link"
-                  href="https://github.com/JennaStrom/nutrition-ninja"
+              <a className="project-link-container" href="#">
+                <div
+                  className="p-3 project-box project-box-height"
+                  style={style.project6}
                 >
-                  🐙
-                </a>
-                <p>Full Stack</p>
-              </div>
-            </div>
-            <div className="col-md mb-3">
-              <div className="p-3 project-box-height" style={style.project6}>
-                <a href="Nutrition Ninja (hidden-lake-38607-a47be9049bc1.herokuapp.com)">
-                  <h3 className="name-emoji-link">66666666666666</h3>
-                  <span></span>
-                </a>
-                <a
-                  className="name-emoji-link"
-                  href="https://github.com/JennaStrom/nutrition-ninja"
-                >
-                  🐙
-                </a>
-                <p>Full Stack</p>
-              </div>
+                  <a className="name-emoji-link" href="#">
+                    FlySetter
+                  </a>
+                  <a className="name-emoji-link" href="#">
+                    <img
+                      src="images/github-mark-white.png"
+                      style={style.iconsize}
+                    />
+                  </a>
+                  <p className="links-paragraph" style={style.description}>
+                    MERN Stack
+                  </p>
+                </div>
+              </a>
             </div>
           </div>
         </div>

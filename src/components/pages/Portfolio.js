@@ -12,22 +12,22 @@ const style = {
     backgroundRepeat: "no-repeat",
   },
   project3: {
-    background: `url(${process.env.PUBLIC_URL}/images/project3.png)`,
+    background: `url(${process.env.PUBLIC_URL}/images/Animationweather.gif)`,
     backgroundSize: "100% 100%",
     backgroundRepeat: "no-repeat",
   },
   project4: {
-    background: `url(${process.env.PUBLIC_URL}/images/project4.jpg)`,
+    background: `url(${process.env.PUBLIC_URL}/images/Animation4.gif)`,
     backgroundSize: "100% 100%",
     backgroundRepeat: "no-repeat",
   },
   project5: {
-    background: `url(${process.env.PUBLIC_URL}/images/project5.jpg)`,
+    background: `url(${process.env.PUBLIC_URL}/images/Animation-scheduler.gif)`,
     backgroundSize: "100% 100%",
     backgroundRepeat: "no-repeat",
   },
   project6: {
-    background: `url(${process.env.PUBLIC_URL}/images/project6.jpg)`,
+    background: `url(${process.env.PUBLIC_URL}/images/note-taker.png)`,
     backgroundSize: "100% 100%",
     backgroundRepeat: "no-repeat",
   },
@@ -194,7 +194,7 @@ export default function Projects() {
                 style={style.project6}
               >
                 <a className="name-emoji-link" href="#">
-                  FlySetter
+                  Note Taker
                 </a>
                 <a className="name-emoji-link" href="#">
                   <img
@@ -205,7 +205,7 @@ export default function Projects() {
                   />
                 </a>
                 <p className="links-paragraph" style={style.description}>
-                  MERN Stack
+                  Full Stack
                 </p>
               </div>
             </div>

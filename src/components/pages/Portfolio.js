@@ -2,7 +2,7 @@ import React from "react";
 
 const style = {
   project1: {
-    background: "url('/images/project1.png')",
+    background: "url('public/images/project1.png')",
     backgroundSize: "100% 100%",
     backgroundRepeat: "no-repeat",
   },

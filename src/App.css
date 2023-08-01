@@ -40,7 +40,6 @@ a.active {
 /* Portfolio component */
 .projects-container {
   max-width: 75%;
-
   margin: 0 0 2rem 8rem;
 }
 .project-box-height {
@@ -52,13 +51,7 @@ a.active {
     margin-left: 2rem;
   }
 }
-.project-link-container {
-  text-decoration: none;
-  /* cursor: pointer; */
-}
-/* .project-link-container:hover {
-  transform: scale(2);
-} */
+
 .name-emoji-link {
   opacity: 0;
   padding-right: 1rem;
@@ -75,6 +68,8 @@ a.active {
 
 .project-box {
   position: relative;
+  cursor: pointer;
+  width: 96%;
 }
 .project-box .links-paragraph {
   visibility: hidden;
@@ -92,7 +87,10 @@ a.active {
   font-weight: bold;
   font-size: large;
 }
-
+.project-box:hover {
+  transform: scale(1.1);
+  border-radius: 4%;
+}
 /* Contact component */
 .contact-submit-btn {
   border: none;

@@ -24,6 +24,7 @@ export default function Footer() {
           >
             <img
               src={process.env.PUBLIC_URL + "/images/linkedIn.jpg"}
+              alt="LinkedIn icon"
               style={style.iconsize}
             />
           </a>
@@ -32,6 +33,7 @@ export default function Footer() {
           <a href="https://github.com/nafbek" style={style.anchorDecor}>
             <img
               src={process.env.PUBLIC_URL + "/images/github-mark-white.png"}
+              alt="GitHub icon"
               style={style.iconsize}
             />
           </a>

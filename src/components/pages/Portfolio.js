@@ -69,6 +69,7 @@ export default function Projects() {
                       process.env.PUBLIC_URL + "/images/github-mark-white.png"
                     }
                     style={style.iconsize}
+                    alt="GitHub icon"
                   />
                 </a>
                 <p className="links-paragraph" style={style.description}>
@@ -97,6 +98,7 @@ export default function Projects() {
                       process.env.PUBLIC_URL + "/images/github-mark-white.png"
                     }
                     style={style.iconsize}
+                    alt="GitHub icon"
                   />
                 </a>
                 <p className="links-paragraph" style={style.description}>
@@ -125,6 +127,7 @@ export default function Projects() {
                       process.env.PUBLIC_URL + "/images/github-mark-white.png"
                     }
                     style={style.iconsize}
+                    alt="GitHub icon"
                   />
                 </a>
                 <p className="links-paragraph" style={style.description}>
@@ -146,13 +149,14 @@ export default function Projects() {
                 </a>
                 <a
                   className="name-emoji-link"
-                  href="https://github.com/Nafbek/password-generator-challenge3/settings/pages"
+                  href="https://github.com/Nafbek/password-generator-challenge3"
                 >
                   <img
                     src={
                       process.env.PUBLIC_URL + "/images/github-mark-white.png"
                     }
                     style={style.iconsize}
+                    alt="GitHub icon"
                   />
                 </a>
                 <p className="links-paragraph" style={style.description}>
@@ -180,6 +184,7 @@ export default function Projects() {
                       process.env.PUBLIC_URL + "/images/github-mark-white.png"
                     }
                     style={style.iconsize}
+                    alt="GitHub icon"
                   />
                 </a>
                 <p className="links-paragraph" style={style.description}>
@@ -193,15 +198,22 @@ export default function Projects() {
                 className="p-3 project-box project-box-height"
                 style={style.project6}
               >
-                <a className="name-emoji-link" href="#">
+                <a
+                  className="name-emoji-link"
+                  href="https://note-taker-expree-app.herokuapp.com/"
+                >
                   Note Taker
                 </a>
-                <a className="name-emoji-link" href="#">
+                <a
+                  className="name-emoji-link"
+                  href="https://github.com/Nafbek/note-taker"
+                >
                   <img
                     src={
                       process.env.PUBLIC_URL + "/images/github-mark-white.png"
                     }
                     style={style.iconsize}
+                    alt="GitHub icon"
                   />
                 </a>
                 <p className="links-paragraph" style={style.description}>

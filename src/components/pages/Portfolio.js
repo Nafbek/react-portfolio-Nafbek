@@ -57,12 +57,16 @@ export default function Projects() {
                 <a
                   className="name-emoji-link"
                   href="https://jennastrom.github.io/Beer-and-a-show/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Beer and A Show
                 </a>
                 <a
                   className="name-emoji-link"
                   href="https://github.com/JennaStrom/Beer-and-a-show"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img
                     src={
@@ -86,12 +90,16 @@ export default function Projects() {
                 <a
                   className="name-emoji-link"
                   href="https://hidden-lake-38607-a47be9049bc1.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Nutrition Ninja
                 </a>
                 <a
                   className="name-emoji-link"
                   href="https://github.com/JennaStrom/nutrition-ninja"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img
                     src={
@@ -115,12 +123,16 @@ export default function Projects() {
                 <a
                   className="name-emoji-link"
                   href="https://nafbek.github.io/weather-dashboard-5days-forecast/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Weather Dashboard
                 </a>
                 <a
                   className="name-emoji-link"
                   href="https://github.com/Nafbek/weather-dashboard-5days-forecast"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img
                     src={
@@ -144,12 +156,16 @@ export default function Projects() {
                 <a
                   className="name-emoji-link"
                   href="https://nafbek.github.io/password-generator-challenge3/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Password Generator
                 </a>
                 <a
                   className="name-emoji-link"
                   href="https://github.com/Nafbek/password-generator-challenge3"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img
                     src={
@@ -172,12 +188,16 @@ export default function Projects() {
                 <a
                   className="name-emoji-link"
                   href="https://nafbek.github.io/work-day-scheduler/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Work Day Scheduler
                 </a>
                 <a
                   className="name-emoji-link"
                   href="https://github.com/Nafbek/work-day-scheduler"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img
                     src={
@@ -201,12 +221,16 @@ export default function Projects() {
                 <a
                   className="name-emoji-link"
                   href="https://note-taker-expree-app.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Note Taker
                 </a>
                 <a
                   className="name-emoji-link"
                   href="https://github.com/Nafbek/note-taker"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img
                     src={

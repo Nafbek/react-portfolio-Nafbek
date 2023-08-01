@@ -10,6 +10,8 @@ export default function Resume() {
           <a
             href="https://docs.google.com/document/d/16LnhgQ-QQ2N2bM9kBwz4Sw38bwdA6OJng9C_HgQOkhM/edit"
             alt="resume document"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             resume
           </a>

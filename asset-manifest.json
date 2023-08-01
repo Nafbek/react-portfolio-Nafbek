@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-portfolio-Nafbek/static/css/main.87bf49f4.css",
-    "main.js": "/react-portfolio-Nafbek/static/js/main.c8fa5430.js",
+    "main.js": "/react-portfolio-Nafbek/static/js/main.bc81bab9.js",
     "index.html": "/react-portfolio-Nafbek/index.html",
     "main.87bf49f4.css.map": "/react-portfolio-Nafbek/static/css/main.87bf49f4.css.map",
-    "main.c8fa5430.js.map": "/react-portfolio-Nafbek/static/js/main.c8fa5430.js.map"
+    "main.bc81bab9.js.map": "/react-portfolio-Nafbek/static/js/main.bc81bab9.js.map"
   },
   "entrypoints": [
     "static/css/main.87bf49f4.css",
-    "static/js/main.c8fa5430.js"
+    "static/js/main.bc81bab9.js"
   ]
 }

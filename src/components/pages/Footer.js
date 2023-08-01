@@ -22,12 +22,18 @@ export default function Footer() {
             href="https://www.linkedin.com/in/nafbek-s-kebede-10619b164/"
             style={style.anchorDecor}
           >
-            <img src="images/linkedIn.jpg" style={style.iconsize} />
+            <img
+              src={process.env.PUBLIC_URL + "/images/linkedIn.jpg"}
+              style={style.iconsize}
+            />
           </a>
         </span>
         <span role="img" aria-label="octopus">
           <a href="https://github.com/nafbek" style={style.anchorDecor}>
-            <img src="images/github-mark-white.png" style={style.iconsize} />
+            <img
+              src={process.env.PUBLIC_URL + "/images/github-mark-white.png"}
+              style={style.iconsize}
+            />
           </a>
         </span>
       </div>

@@ -54,7 +54,11 @@ a.active {
 }
 .project-link-container {
   text-decoration: none;
+  /* cursor: pointer; */
 }
+/* .project-link-container:hover {
+  transform: scale(2);
+} */
 .name-emoji-link {
   opacity: 0;
   padding-right: 1rem;

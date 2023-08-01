@@ -2,32 +2,32 @@ import React from "react";
 
 const style = {
   project1: {
-    background: "url('public/images/project1.png')",
+    background: `url(${process.env.PUBLIC_URL}/images/project1.png)`,
     backgroundSize: "100% 100%",
     backgroundRepeat: "no-repeat",
   },
   project2: {
-    background: "url('/images/project2.png')",
+    background: `url(${process.env.PUBLIC_URL}/images/project2.png)`,
     backgroundSize: "100% 100%",
     backgroundRepeat: "no-repeat",
   },
   project3: {
-    background: "url('/images/project3.png')",
+    background: `url(${process.env.PUBLIC_URL}/images/project3.png)`,
     backgroundSize: "100% 100%",
     backgroundRepeat: "no-repeat",
   },
   project4: {
-    background: "url('/images/project4.jpg')",
+    background: `url(${process.env.PUBLIC_URL}/images/project4.jpg)`,
     backgroundSize: "100% 100%",
     backgroundRepeat: "no-repeat",
   },
   project5: {
-    background: "url('/images/project5.jpg')",
+    background: `url(${process.env.PUBLIC_URL}/images/project5.jpg)`,
     backgroundSize: "100% 100%",
     backgroundRepeat: "no-repeat",
   },
   project6: {
-    background: "url('/images/project6.jpg')",
+    background: `url(${process.env.PUBLIC_URL}/images/project6.jpg)`,
     backgroundSize: "100% 100%",
     backgroundRepeat: "no-repeat",
   },
@@ -66,7 +66,9 @@ export default function Projects() {
                     href="https://github.com/JennaStrom/Beer-and-a-show"
                   >
                     <img
-                      src="images/github-mark-white.png"
+                      src={
+                        process.env.PUBLIC_URL + "images/github-mark-white.png"
+                      }
                       style={style.iconsize}
                     />
                   </a>
@@ -94,7 +96,9 @@ export default function Projects() {
                     href="https://github.com/JennaStrom/nutrition-ninja"
                   >
                     <img
-                      src="images/github-mark-white.png"
+                      src={
+                        process.env.PUBLIC_URL + "images/github-mark-white.png"
+                      }
                       style={style.iconsize}
                     />
                   </a>
@@ -122,7 +126,9 @@ export default function Projects() {
                     href="https://github.com/Nafbek/weather-dashboard-5days-forecast"
                   >
                     <img
-                      src="images/github-mark-white.png"
+                      src={
+                        process.env.PUBLIC_URL + "images/github-mark-white.png"
+                      }
                       style={style.iconsize}
                     />
                   </a>
@@ -150,7 +156,9 @@ export default function Projects() {
                     href="https://github.com/Nafbek/password-generator-challenge3/settings/pages"
                   >
                     <img
-                      src="images/github-mark-white.png"
+                      src={
+                        process.env.PUBLIC_URL + "images/github-mark-white.png"
+                      }
                       style={style.iconsize}
                     />
                   </a>
@@ -177,7 +185,9 @@ export default function Projects() {
                     href="https://github.com/Nafbek/work-day-scheduler"
                   >
                     <img
-                      src="images/github-mark-white.png"
+                      src={
+                        process.env.PUBLIC_URL + "images/github-mark-white.png"
+                      }
                       style={style.iconsize}
                     />
                   </a>
@@ -199,7 +209,9 @@ export default function Projects() {
                   </a>
                   <a className="name-emoji-link" href="#">
                     <img
-                      src="images/github-mark-white.png"
+                      src={
+                        process.env.PUBLIC_URL + "images/github-mark-white.png"
+                      }
                       style={style.iconsize}
                     />
                   </a>

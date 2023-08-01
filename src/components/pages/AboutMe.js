@@ -16,7 +16,7 @@ export default function AboutMe() {
       <div id="aboutMe" className="container">
         <h2 className="heading2 py-3">About Me</h2>
         <img
-          src="react-portfolio-Nafbek/images/profile-picture.jpg"
+          src={process.env.PUBLIC_URL + "/images/profile-picture.jpg"}
           style={style.image}
           alt="Nafbek's profile picture"
         />

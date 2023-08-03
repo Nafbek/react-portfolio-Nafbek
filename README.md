@@ -10,6 +10,11 @@ Clone the repository, and open the root directory of the application on your ter
 
 The `About Me` section serves as a home page of the application, from where you can navigate to the other pages. In the portfolio page, you find a list of projects with links to the `GitHub` repository and `deployed site`. Hovering over each project will reveal the links. For any enquiries or messages, use the contact form in the `Contact` page.
 
+You can follow the link below to navigate the application.
+
+![Screenshot](/public/images/Screenshot-app.png)
+![Link](https://nafbek.github.io/react-portfolio-Nafbek/)
+
 ## License
 
 N/A

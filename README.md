@@ -13,8 +13,9 @@ The `About Me` section serves as a home page of the application, from where you 
 You can follow the link below to navigate the application.
 
 ![Screenshot](/public/images/Screenshot-app.png)
-![Link](https://nafbek.github.io/react-portfolio-Nafbek/)
 
-## License
+[Link](https://nafbek.github.io/react-portfolio-Nafbek/)
+
+## Licenseit
 
 N/A

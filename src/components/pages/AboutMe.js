@@ -18,7 +18,7 @@ export default function AboutMe() {
         <img
           src={process.env.PUBLIC_URL + "/images/profile-picture.jpg"}
           style={style.image}
-          alt="Nafbek's-profile-picture"
+          alt="Nafbek's-profile"
         />
         <div className="">
           <div style={style.aboutContainer}>

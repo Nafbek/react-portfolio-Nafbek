@@ -130,7 +130,7 @@ export default function Projects() {
                 </a>
                 <a
                   className="name-emoji-link"
-                  href="https://github.com/Nafbek/react-portfolio-Nafbek"
+                  href="GitHub repo: https://github.com/CML120/ABC_Goat"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -143,7 +143,7 @@ export default function Projects() {
                   />
                 </a>
                 <p className="links-paragraph" style={style.description}>
-                  Frontend
+                  MERN
                 </p>
               </div>
             </div>

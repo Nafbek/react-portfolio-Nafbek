@@ -130,7 +130,7 @@ export default function Projects() {
                 </a>
                 <a
                   className="name-emoji-link"
-                  href="GitHub repo: https://github.com/CML120/ABC_Goat"
+                  href="https://github.com/CML120/ABC_Goat"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

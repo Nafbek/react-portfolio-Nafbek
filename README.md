@@ -14,7 +14,7 @@ You can follow the link below to navigate the application.
 
 ![Screenshot](/public/images/Screenshot-app.png)
 
-[Link](https://nafbek.github.io/react-portfolio-Nafbek/)
+[Portfolio Link](https://nafbek.github.io/react-portfolio-Nafbek/)
 
 ## Licenseit
 

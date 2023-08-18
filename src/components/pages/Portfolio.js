@@ -12,7 +12,7 @@ const style = {
     backgroundRepeat: "no-repeat",
   },
   project3: {
-    background: `url(${process.env.PUBLIC_URL}/images/Animationweather.gif)`,
+    background: `url(${process.env.PUBLIC_URL}/images/abc-goat.png)`,
     backgroundSize: "100% 100%",
     backgroundRepeat: "no-repeat",
   },
@@ -122,15 +122,15 @@ export default function Projects() {
               >
                 <a
                   className="name-emoji-link"
-                  href="https://nafbek.github.io/weather-dashboard-5days-forecast/"
+                  href="https://abc-goat-ddaec4f82441.herokuapp.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Weather Dashboard
+                  ABC GOAT
                 </a>
                 <a
                   className="name-emoji-link"
-                  href="https://github.com/Nafbek/weather-dashboard-5days-forecast"
+                  href="https://github.com/Nafbek/react-portfolio-Nafbek"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

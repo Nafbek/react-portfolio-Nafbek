@@ -19,14 +19,17 @@ export default function Resume() {
         <h3>Frontend</h3>
         <ul>
           <li>React.js</li>
-          <li>CSS</li>
+          <li>TypeScript</li>
+          <li>Advanced CSS</li>
           <li>Bootstrap</li>
           <li>Tailwind</li>
+          <li>Chakra</li>
           <li>HTML</li>
           <li>jQuery</li>
         </ul>
         <h3>Backend</h3>
         <ul>
+          <li>MySQL</li>
           <li>SQL</li>
           <li>NoSQL</li>
           <li>Node.js</li>
@@ -34,6 +37,14 @@ export default function Resume() {
           <li>Mongoose</li>
           <li>Sequelize.sj</li>
           <li>Express.js</li>
+        </ul>
+        <h3>Other Skills</h3>
+        <ul>
+          <li>Git version Control</li>
+          <li>Heroku cloud deployment</li>
+          <li>Webpack</li>
+          <li>Test-Driven Development(TDD) using JEST</li>
+          <li>JSON Web Token</li>
         </ul>
       </div>
     </div>

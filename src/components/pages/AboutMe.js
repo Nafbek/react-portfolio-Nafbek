@@ -23,17 +23,19 @@ export default function AboutMe() {
         <div className="">
           <div style={style.aboutContainer}>
             <p className="pt-3">
-              With a strong business and project management foundation, combined
-              with evolving expertise in full stack web development, computer
-              science, and with fast learning abilities, problem-solving skills,
-              and critical thinking qualities, prepared to contribute to
-              cutting-edge software development projects and drive
-              organizational success.
+              Proficiently skilled in front-end technologies like JavaScript,
+              jQuery, React, TypeScript, HTML5, CSS, Bootstrap, Tailwind, as
+              well as back-end technologies such as Nodejs, Expressjs, MySQL and
+              MongoDB. Additionally, I possess a profound understanding of REST
+              APIs, Heroku, Git for version control, JSON Web Token, Webpack,
+              and Test-Driven Development using JEST.
             </p>
             <p className="">
-              Proficiently skilled in JavaScript, database management, API
-              integration, and front-end frameworks, possess the competencies
-              essential for excelling in demanding professional environments.
+              With expertise in full stack web development, combined with a
+              strong business and project management foundation, and with fast
+              learning abilities, problem-solving skills, and critical thinking
+              qualities, prepared to contribute to cutting-edge software
+              development projects and drive organizational success.
             </p>
           </div>
         </div>
